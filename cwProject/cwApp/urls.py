@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+# paths that triggers functions in views/are called in html files
 urlpatterns = [
     path('', views.index, name='index'),
     path('page2', views.two, name='page2'),

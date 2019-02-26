@@ -3,7 +3,7 @@ from .models import Cocktail
 from django.http import HttpResponse
 
 
-# Create your views here.
+# pages for ex1
 def index(request):
     context = {
         'name': 'home'
@@ -36,6 +36,7 @@ def five(request):
     return render(request, 'cwApp/Page5.html', context)
 
 
+# pages for ex2
 def cocktails(request):
     allDrinks = Cocktail.objects.all()
     context = {

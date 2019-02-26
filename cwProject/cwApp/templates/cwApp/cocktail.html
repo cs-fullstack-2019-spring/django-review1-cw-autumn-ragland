@@ -6,6 +6,7 @@
 </head>
 <body>
 <ul>
+    <!--iterate through objects created using model-->
 {% for eachDrink in drinks %}
     <li>
     <a href="{% url 'details' eachDrink.id %}">{{eachDrink.name}}</a>

@@ -5,10 +5,11 @@
     <title>details</title>
 </head>
 <body>
+<!--unique page of each drink called by drink id hence the variables-->
 <h1>{{drink.name}}</h1>
 <p> Alcohol Percentage: {{drink.alcoholPercentage}}%</p>
 <p>Serving Glass: {{drink.servingGlass}}</p>
-
+<!--back to home link-->
 <a href="{% url 'drinks' %}">back to home</a>
 </body>
 </html>
