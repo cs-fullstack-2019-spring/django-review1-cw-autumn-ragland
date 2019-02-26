@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cocktail</title>
+</head>
+<body>
+<ul>
+{% for eachDrink in drinks %}
+    <li>
+    <a href="{% url 'details' eachDrink.id %}">{{eachDrink.name}}</a>
+    </li>
+{% endfor %}
+
+</ul>
+</body>
+</html>
